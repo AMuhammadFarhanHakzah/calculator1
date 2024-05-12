@@ -23,7 +23,8 @@
 .calculator form input {
     border: 0;
     outline: 0;
-    width: 60px;
+    width: 15%; /* Changed fixed width to percentage */
+    max-width: 60px; /* Added max-width to prevent buttons from becoming too wide */
     height: 60px;
     border-radius: 10px;
     box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
@@ -49,7 +50,7 @@ form .display input {
 }
 
 form input.equal {
-    width: 145px;
+    width: calc(15% + 85px); /* Adjusted width for equal button */
 }
 
 form div input.operator {
